@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Porsche Jigsaw Puzzle</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="panel">
+        <h1>Porsche Puzzle</h1>
+        <div class="stats">
+          <div class="stat-item">
+            <span class="label">Moves</span>
+            <span id="moves" class="value">0</span>
+          </div>
+          <div class="stat-item">
+            <span class="label">Time</span>
+            <span id="timer" class="value">00:00</span>
+          </div>
+        </div>
+        <div id="status" class="status">พร้อมเล่น</div>
+        <div class="buttons">
+          <button id="shuffleBtn">Shuffle</button>
+          <button id="resetBtn" class="secondary">Reset</button>
+        </div>
+      </aside>
+
+      <main class="game-area">
+        <div id="board" class="board" aria-label="Puzzle slots"></div>
+        <div id="pieceTray" class="piece-tray" aria-label="Puzzle pieces"></div>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
